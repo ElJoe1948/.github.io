@@ -436,4 +436,9 @@ li {
     .curve {
         margin-top: 0;
     }
+    .logowhite {
+        height: 50px;
+        margin-bottom: 10px
+    }
+    
 }
