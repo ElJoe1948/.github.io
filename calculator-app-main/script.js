@@ -30,6 +30,7 @@ const passInput = function () {
   
   if (hasUslessComma.test(curInput.innerText) && isOperator.test(this.value)) {
     curInput.innerText = curInput.innerText.substring(0, curInput.innerText.indexOf(","));
+    console.log("hi")
   }
   if (testStr === "∞" || testStr ==="N") {
     resetButton.click();
@@ -44,12 +45,7 @@ const passInput = function () {
     prevInput.innerText += ` ${this.value} `;
     return
   }
-    if 
-      (testStr === "," && isOperator.test(this.value)
-    ) {
-      console.log("its me")
-      curInput.innerText = curInput.innerText.slice(0, -1);
-    }
+
 
   //Check if user wants to continue with result else start new
   if (
