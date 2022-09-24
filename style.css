@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+
+:root {
+  --underline-red: hsl(7, 99%, 70%);
+  --underline-yellow: hsl(51, 100%, 49%);
+  --text-graphic: hsl(167, 40%, 24%);
+  --text-photography: hsl(198, 62%, 26%);
+  --text-footer: hsl(168, 34%, 41%);
+  --footer-bg: hsl(167, 44%, 70%);
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-styled: Fraunces, sans-serif;
+  --font-straight: Barlow, sans-serif;
+  font-size: 18px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-styled);
+}
+
+.hidden {
+}
+
+.top-pic {
+  position: relative;
+  margin-bottom: -4.8px;
+}
+
+#header-img {
+  width: 100%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  color: var(--white);
+  font-family: var(--font-straight);
+  margin-right: 30px;
+}
+
+header ul li:hover {
+  cursor: pointer;
+}
+
+header button {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  color: var(--very-dark-desaturated-blue);
+}
+
+header button:hover {
+  background-color: rgba(255, 255, 255, 30%);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.top-pic h1 {
+  position: absolute;
+  top: 20%;
+  letter-spacing: 0.2em;
+  color: var(--white);
+  font-size: 3.8rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 900;
+}
+
+#arrow-img {
+  position: absolute;
+  height: 15%;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  fill: var(--white);
+}
+
+.grid-2x3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2x3 img {
+  width: 100%;
+}
+
+#transform-text {
+  grid-row: 1/2;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.5rem;
+}
+
+.underline {
+  position: absolute;
+  width: 110%;
+  height: 40%;
+  transform: translateY(-80%) translateX(-5%);
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 30%;
+}
+
+a:hover .underline {
+  opacity: 100%;
+}
+
+#yellow-line {
+  background-color: var(--underline-yellow);
+}
+
+#red-line {
+  background-color: var(--underline-red);
+}
+.hide {
+    display: none;
+}
+.grid-text {
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 15%;
+}
+
+.grid-text h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.grid-text p {
+  color: var(--very-dark-grayish-blue);
+  font-family: var(--font-straight);
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.text-on-img {
+  position: relative;
+}
+
+.text-on-img h3 {
+  position: absolute;
+  left: 0;
+  top: 65%;
+  right: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.text-on-img p {
+  position: absolute;
+  top: 75%;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: var(--font-straight);
+}
+
+.green {
+  color: var(--text-graphic);
+}
+
+.blue {
+  color: var(--text-photography);
+}
+
+.tesimonials-container {
+  margin: auto;
+  background-color: var(--white);
+  padding: 6rem;
+}
+
+.tesimonials-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--grayish-blue);
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+.tesimonials {
+  display: flex;
+  /* justify-content: space-between;
+    /* align-items: flex-start; */
+  gap: 4rem;
+}
+
+.tesimonial-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.tesimonial-single img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-bottom: 4rem;
+}
+
+.tesimonial-single p {
+  color: var(--very-dark-grayish-blue);
+  font-family: var(--font-straight);
+  line-height: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.tesimonial-single h4 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.tesimonial-single h6 {
+  color: var(--dark-grayish-blue);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+footer img {
+  filter: brightness(0) saturate(100%) invert(33%) sepia(62%) saturate(411%)
+    hue-rotate(116deg) brightness(98%) contrast(86%);
+}
+
+footer ul {
+  list-style: none;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  gap: 3rem;
+  color: var(--text-footer);
+}
+
+footer li {
+  width: 4.3rem;
+}
+footer li:hover {
+  cursor: pointer;
+  color: var(--white);
+}
+
+.left-point{
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 0vh solid transparent;
+	border-top: 30px solid transparent;
+    border-bottom: 30px solid white;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+    transform: translateY(-99%);
+    z-index: 99999;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials img:hover {
+  filter: brightness(100) saturate(100%);
+  cursor: pointer;
+}
+
+.bottom-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.bottom-imgs img {
+  width: 100%;
+}
+
+#transform-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1382px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1078px) {
+  .grid-text {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .grid-2x3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: -1px;
+  }
+
+  header nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    top: 100px;
+    background-color: white;
+    width: 80%;
+    height: 400%;
+    padding: 1rem;    
+    z-index: 99;
+  }
+   header nav ul {
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--very-dark-desaturated-blue);
+    margin: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #transform-img {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-transform.jpg");
+  }
+  .tesimonials {
+    display: block;
+  }
+  #stand-img {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-stand-out.jpg");
+  }
+  #cherry-img {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg");
+
+  }
+  #orange-img {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg");
+  }
+  #header-img {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
+  }
+  .bottom-imgs {
+    grid-template-columns: 1fr 1fr;
+  }
+  #milk {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg");
+  }
+  #orange {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg");
+  }
+  #cone {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg");
+  }
+  #sugar {
+    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  .top-pic h1 {
+    font-size: 3rem;
+  }
+  .green {
+    height: 600px;
+  }
+  .tesimonial-single {
+    margin: 3rem 0;
+  }
+  .hide {
+    display: initial;
+  }
+  .tesimonial-single {
+    width: 50%;
+    margin: 3rem auto 0;
+  }
+  .tesimonial-single img {
+    margin-bottom: 1rem;
+  }
+  .tesimonial-single p {
+    margin-bottom: 1rem;
+  }
+  header button, header button:hover {
+    background-color: var(--underline-yellow);
+  }
+}

@@ -1,128 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-  
-  <header>
-    <img src="images/logo.svg" alt="Fylo logo" class="logo-header">
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#sign-in">Sign In</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
-    <div class="features" id="features">
-      <div class="features-text">
-        <h1 class="heading">All your files in one secure location, accessible anywhere.</h1>
-        <p class="text">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
-        <div class="subscribe">
-          <form action="none">
-            <input class="input" type="email" placeholder="Enter your email...">
-            <button class="button" type="submit">Get Started</button>
-          </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="top-pic">
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-header.jpg"
+        alt=""
+        id="header-img"
+        min-width="0"
+      />
+      <header>
+        <img
+          src="/sunnyside-agency-landing-page-main/images/logo.svg"
+          alt=""
+          class="logo"
+        />
+        <img src="/sunnyside-agency-landing-page-main/images/icon-hamburger.svg" alt="" id="hamburger" class="hide">
+        <nav class="hidden" id="navbar">
+          <div class="left-point hide"></div>
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+          <button>Contact</button>
+        </nav>
+      </header>
+      <h1>WE ARE CREATIVES</h1>
+      <img
+        src="/sunnyside-agency-landing-page-main/images/icon-arrow-down.svg"
+        alt=""
+        id="arrow-img"
+      />
+    </section>
+    <section class="grid-2x3">
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg"
+        alt=""
+        id="transform-img"
+        min-width=""
+        min-height=""
+      />
+      <div class="grid-text" id="transform-text">
+        <h2>Transform your brand</h2>
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <a href=""
+          >Learn More
+          <div class="underline" id="yellow-line"></div
+        ></a>
+      </div>
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg"
+        alt=""
+        min-width=""
+        min-height=""
+        id="stand-img"
+      />
+      <div class="grid-text" id="stand-text">
+        <h2>Stand out to the right audience</h2>
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+        <a href=""
+          >Learn More
+          <div class="underline" id="red-line"></div
+        ></a>
+      </div>
+      <div class="text-on-img green">
+        <img
+          src="/sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg"
+          alt=""
+          min-width=""
+          min-height=""
+          id="cherry-img"
+        />
+        <h3>Graphic design</h3>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+      <div class="text-on-img blue">
+        <img
+          src="/sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg"
+          alt=""
+          id="orange-img"
+          min-width="0"
+          min-height=""
+        />
+        <h3>Photography</h3>
+        <p>
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
+    <section class="tesimonials-container">
+      <h1>Client testimonials</h1>
+      <div class="tesimonials">
+        <div class="tesimonial-single">
+          <img
+            src="/sunnyside-agency-landing-page-main/images/image-emily.jpg"
+            alt=""
+          />
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div>
+            <h4>Emily R.</h4>
+            <h6>Marketing Director</h6>
+          </div>
         </div>
-      </div>
-      <div class="features-img">
-        <img src="images/illustration-1.svg" alt="Two guys throwing files in a huge Folder">
-      </div>
-    </div>
-    <div class="curve">
-      <img src="images/bg-curve-desktop.svg" alt="" id="curve">
-    </div>
-    
-    <div class="team" id="team">
-      <div id="team-text">
-        <h1 class="heading">Stay productive, wherever you are</h1>
-        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-        <a href="">See how Fylo works <img src="images/icon-arrow.svg" alt="" id="arrow"></a>
-        <div class="quote">
-          <img src="images/icon-quotes.svg" alt="quotation mark" id="quotation-mark">
-          <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
-          <div class="author">
-            <img src="images/avatar-testimonial.jpg" alt="picture of author" id="author-img">
-            <div class="author-name">
-              <h2 id="author-name">Kyle Burton</h2>
-              <h4 id="author-position">Founder & CEO, Huddle</h4>
-            </div>
+        <div class="tesimonial-single">
+          <img
+            src="/sunnyside-agency-landing-page-main/images/image-thomas.jpg"
+            alt=""
+          />
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div>
+            <h4>Thomas S.</h4>
+            <h6>Chief Operating Officer</h6>
+          </div>
+        </div>
+        <div class="tesimonial-single">
+          <img
+            src="/sunnyside-agency-landing-page-main/images/image-jennie.jpg"
+            alt=""
+          />
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div>
+            <h4>Jennie F.</h4>
+            <h6>Business Owner</h6>
           </div>
         </div>
       </div>
-      <div id="team-img">
-        <img src="images/illustration-2.svg" alt="3 people holding quotes" id="team-illustration">
+    </section>
+    <section class="bottom-imgs">
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg"
+        alt=""
+        id="milk"
+      />
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg"
+        alt=""
+        id="orange"
+      />
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg"
+        alt=""
+        id="cone"
+      />
+      <img
+        src="/sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg"
+        alt=""
+        id="sugar"
+      />
+    </section>
+
+    <footer>
+      <img
+        src="/sunnyside-agency-landing-page-main/images/logo.svg"
+        alt=""
+        class="footer-logo"
+      />
+      <ul class="footer-links">
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+      <div class="socials">
+        <img
+          src="/sunnyside-agency-landing-page-main/images/icon-facebook.svg"
+          alt=""
+        />
+        <img
+          src="/sunnyside-agency-landing-page-main/images/icon-instagram.svg"
+          alt=""
+        />
+        <img
+          src="/sunnyside-agency-landing-page-main/images/icon-twitter.svg"
+          alt=""
+        />
+        <img
+          src="/sunnyside-agency-landing-page-main/images/icon-pinterest.svg"
+          alt=""
+        />
       </div>
-    </div>
-    
-    <div class="sign-in" id="sign-in">
-        <div id="sign-in-text">
-          <h1 class="heading" id="sih1">Get early access today</h1>
-          <p id="sip">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-        </div>
-        <div id="sign-in-form">
-          <form action="submit">
-            <input type="email" class="input" placeholder="email@example.com">
-            <button class="button" type="submit">Get Started For Free</button>
-          </form>
-        </div>
-    </div>
-  </main>
-  <footer>
-    <div class="logowhite">
-      <img src="images/logo.svg" alt="">
-    </div>
-    <div class="footer">
-      <div id="contacts">
-        <ul>  
-          <li>
-            <img src="images/icon-phone.svg" alt="">
-            <p>Phone: +1-543-123-4567</p>
-          </li>
-          <li>
-            <img src="images/icon-email.svg" alt="">
-            <p>example@fylo.com</p>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </ul>
-      </div>
-      <div id="logo">
-        <a href="http://www.facebook.com" class="fa fa-facebook-f logo" target="_blank"></a>
-        <a target="_blank" href="http://www.twitter.com" class="fa fa-twitter logo"></a>
-        <a target="_blank" href="http://www.instagram.com" class="fa fa-instagram logo"></a>
-    </div>
-  </footer>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Joel Mayer</a>.
-    </p>
-  </footer>
-</body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
