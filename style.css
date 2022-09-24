@@ -385,38 +385,38 @@ footer li:hover {
   }
 
   #transform-img {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-transform.jpg");
+    content: url("./images/mobile/image-transform.jpg");
   }
   .tesimonials {
     display: block;
   }
   #stand-img {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-stand-out.jpg");
+    content: url("./images/mobile/image-stand-out.jpg");
   }
   #cherry-img {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-graphic-design.jpg");
+    content: url("./images/mobile/image-graphic-design.jpg");
 
   }
   #orange-img {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-photography.jpg");
+    content: url("./images/mobile/image-photography.jpg");
   }
   #header-img {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-header.jpg");
+    content: url("./images/mobile/image-header.jpg");
   }
   .bottom-imgs {
     grid-template-columns: 1fr 1fr;
   }
   #milk {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-milkbottles.jpg");
+    content: url("./images/mobile/image-gallery-milkbottles.jpg");
   }
   #orange {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-orange.jpg");
+    content: url("./images/mobile/image-gallery-orange.jpg");
   }
   #cone {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-cone.jpg");
+    content: url("./images/mobile/image-gallery-cone.jpg");
   }
   #sugar {
-    content: url("/sunnyside-agency-landing-page-main/images/mobile/image-gallery-sugar-cubes.jpg");
+    content: url("./images/mobile/image-gallery-sugar-cubes.jpg");
   }
   .top-pic h1 {
     font-size: 3rem;
